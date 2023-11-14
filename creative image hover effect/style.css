@@ -1,0 +1,56 @@
+body {
+  background: #282a36;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 30px #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 20px;
+  background: url("./images/images.jpg");
+  background-size: 100% 100%;
+}
+
+.one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f71b73;
+  right: -100%;
+  transition: 1.5s;
+}
+
+.one div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.one div h2,
+h1 {
+  color: #fff;
+}
+
+.two {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  right: -200%;
+  transition: 1.5s;
+}
+
+.container:hover .one {
+  right: 0;
+}
+
+.container:hover .two {
+  right: 100%;
+}
